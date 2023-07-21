@@ -15,8 +15,7 @@ public class UserinputDemo {
 	    System.out.println("Enter a string:");
 		String str1=s.nextLine();
 		System.out.println("String is: "+str1);
-		s.close()
-;		
+		s.close();		
 	}
 
 }
