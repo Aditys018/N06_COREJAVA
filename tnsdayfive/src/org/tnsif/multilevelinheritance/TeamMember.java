@@ -3,7 +3,7 @@ package org.tnsif.multilevelinheritance;
 public class TeamMember extends ManagerExecutor{
 	
 	private int BatchName;
-	private String TeamNumber;
+	private String TeamName;
 	private String TeamProject;
 	public int getBatchName() {
 		return BatchName;
@@ -12,10 +12,10 @@ public class TeamMember extends ManagerExecutor{
 		BatchName = batchName;
 	}
 	public String getTeamNumber() {
-		return TeamNumber;
+		return TeamName;
 	}
-	public void setTeamNumber(String teamNumber) {
-		TeamNumber = teamNumber;
+	public void setTeamNumber(String teamName) {
+		TeamName = teamName;
 	}
 	public String getTeamProject() {
 		return TeamProject;
@@ -25,7 +25,7 @@ public class TeamMember extends ManagerExecutor{
 	}
 	@Override
 	public String toString() {
-		return "TeamMember [BatchName=" + BatchName + ", TeamNumber=" + TeamNumber + ", TeamProject=" + TeamProject
+		return "TeamMember [BatchName=" + BatchName + ", TeamNumber=" + TeamName + ", TeamProject=" + TeamProject
 				+ ", toString()=" + super.toString() + "]";
 	}
 	
@@ -33,8 +33,8 @@ public class TeamMember extends ManagerExecutor{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public TeamMember(int empId, String empName, String organizationName, String ManagerId, String project,int BatchName,String TeamNumber,String TeamProject) {
-		super(empId, empName, organizationName, ManagerId, project);
+	public TeamMember(int empId, String empName, String organizationName, String ManagerName, String project,int BatchNo,String TeamSubGroups,String TeamProject) {
+		super(empId, empName, organizationName, ManagerName, project);
 		// TODO Auto-generated constructor stub
 	}
 	

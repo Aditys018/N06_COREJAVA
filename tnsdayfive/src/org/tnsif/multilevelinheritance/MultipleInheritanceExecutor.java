@@ -3,10 +3,12 @@ package org.tnsif.multilevelinheritance;
 public class MultipleInheritanceExecutor {
 
 	public static void main(String[] args) {
-		TeamMember tm= new TeamMember(18,  "Aditi",  "Microsoft",  "Aroud", 6, 917, "Project_Bahama") {
+		TeamMember t= new TeamMember(101,  "Aditi",  "Microsoft",  "abc", "Microsoft", 917, "adc" ,"web");
 			
-			System.out.println(tm);
+			System.out.println(t);
+		
 	}
+		
 
 }
-}
+
