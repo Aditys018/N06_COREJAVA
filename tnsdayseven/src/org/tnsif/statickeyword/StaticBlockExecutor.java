@@ -12,7 +12,7 @@ public class StaticBlockExecutor {
 	}
 	static void print()
 	{
-		System.out.println(Salary);
+	System.out.println(Salary);
 	}
 	
 	public static void main(String[] args) {
