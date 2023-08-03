@@ -1,7 +1,7 @@
 package org.tnsif.finalkeyword;
 //program to demonstrate on final method
 //parent class
-
+//final class cannot be inherited by child class
 
 public class Laptop {
 	final String processor="Intel I5";
