@@ -2,7 +2,7 @@ package org.tnsif.threading;
 
 public class RunnableImpl {
 
-	public class RunnableImpl implements Runnable {
+	public class Runnableimpl implements Runnable {
 
 		@Override
 		public void run() {
@@ -12,7 +12,7 @@ public class RunnableImpl {
 				try {
 					Thread.sleep(600);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}
