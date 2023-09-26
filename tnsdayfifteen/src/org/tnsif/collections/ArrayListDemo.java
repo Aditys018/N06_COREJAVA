@@ -8,9 +8,11 @@ import java.util.List;
 
 public class ArrayListDemo {
 
+	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) {
 		List<Integer> intList = new ArrayList <Integer>();
 		System.out.println("SIZE: " + intList.size());
+		System.out.println("is 50 present?" + intList);
 		intList.add(10);
 		intList.add(40);
 		intList.add(80);
@@ -27,6 +29,16 @@ public class ArrayListDemo {
 		
 		intList.size();
 		System.out.println("SIZE: " + intList.size());
+		System.out.println("40 is present at which position? " + intList.indexOf(40));
+		System.out.println("400 is present at which position? " + intList.indexOf(400));
+		
+		System.out.println("ELEMENT AT 4 POSITION IS REMOVED" );
+		
+//		intList.remove(40);
+//		System.out.println(intList);    IndexOutofbound exception
+		
+		intList.remove("Remove 1: " + intList.indexOf(7));
+//		
 		
 		Collections.sort(intList);
 		System.out.println("____________AFTER SORTING________________");
