@@ -5,7 +5,7 @@ public class Student implements Comparable {
 	private String Name;
 	private float percentage;
 	public int getRollNo() {
-		return RollNo;
+		return RollNo;            
 	}
 	public void setRollNo(int rollNo) {
 		RollNo = rollNo;
