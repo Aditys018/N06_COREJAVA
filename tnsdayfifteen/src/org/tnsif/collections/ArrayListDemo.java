@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import javax.swing.text.html.HTMLDocument.Iterator;
+
 public class ArrayListDemo {
 
 	@SuppressWarnings("unlikely-arg-type")
@@ -38,7 +40,13 @@ public class ArrayListDemo {
 //		System.out.println(intList);    IndexOutofbound exception
 		
 		intList.remove("Remove 1: " + intList.indexOf(7));
-//		
+		
+		Iterator it= (Iterator) intList.iterator();
+		while(it.next()) {
+			int no = it.next();
+			System.out.println(no+"is " + (no %2 ==0 ? );
+		}
+	
 		
 		Collections.sort(intList);
 		System.out.println("____________AFTER SORTING________________");
@@ -50,6 +58,8 @@ public class ArrayListDemo {
 		
 		intList.clear();
 		System.out.println("IS LIST EMPTY? " + intList.isEmpty());
+		
+		
 		
 		
 		
