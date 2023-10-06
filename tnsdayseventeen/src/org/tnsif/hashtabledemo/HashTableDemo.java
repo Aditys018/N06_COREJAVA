@@ -10,7 +10,7 @@ public class HashTableDemo {
 	public static void main(String[] args) {
 		Hashtable<String, String> persons = new Hashtable<String, String>();
 		//if we insert the same values here then the current value will be replaced here
-		//if we insert a null value here then we will get the nulpointerexception
+		//if we insert a null value here then we will get the nullpointerException
 		
 		persons.put("adt@gmail.com" , "ADT");
 		persons.put("aadi@gmail.com" , "Aadi");
