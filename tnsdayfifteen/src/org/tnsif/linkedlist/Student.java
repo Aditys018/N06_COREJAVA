@@ -1,6 +1,6 @@
 package org.tnsif.linkedlist;
 
-public class Student implements Comparable {
+public class Student implements Comparable <Student>{
 	private int RollNo;
 	private String Name;
 	private float percentage;
@@ -28,16 +28,12 @@ public class Student implements Comparable {
 		Name = name;
 		this.percentage = percentage;
 	}
-	public Student() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	
-	@Override
-	public int compareTo(Object o) {
+	
+	public int compareTo(Student o) {
 		// TODO Auto-generated method stub
 		//return 0;
-		return (int) (percentage-o.percentage);
+		return o.RollNo-RollNo;
 	}
 	
 	

@@ -5,8 +5,7 @@ package org.tnsif.collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import javax.swing.text.html.HTMLDocument.Iterator;
+import java.util.Iterator;
 
 public class ArrayListDemo {
 
@@ -41,10 +40,10 @@ public class ArrayListDemo {
 		
 		intList.remove("Remove 1: " + intList.indexOf(7));
 		
-		Iterator it= (Iterator) intList.iterator();
-		while(it.next()) {
+		Iterator<Integer> it= intList.iterator();
+		while(it.hasNext()) {
 			int no = it.next();
-			System.out.println(no+"is " + (no %2 ==0 ? );
+			System.out.println(no+"is " + (no %2 ==0 ? "EVEN" : "ODD"));
 		}
 	
 		
