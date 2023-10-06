@@ -23,7 +23,7 @@ public class HashTableDemo {
 		persons.put("arp@gmal.com" , "Arpit Sinha");
 		System.out.println(persons);
 		
-//		persons.put( null, "acd"); //exception
+//		persons.put( null, "abc"); //exception
 //		System.out.println(persons);
 //		
 		System.out.println(persons.containsKey("arp@gmail.com"));
