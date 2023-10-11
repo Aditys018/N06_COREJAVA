@@ -36,7 +36,7 @@ public class JdbcDemo {
 			else
 				System.out.println("Unable to insert record");
 			
-			//delele students whose name starts with p
+			//delete students whose name starts with p
 			n=st.executeUpdate("DELETE FROM student WHERE sname LIKE 'p%'");
 			if (n>=1)
 				System.out.println(n+" Record(s) Deleted Successfully....");
